@@ -1,0 +1,84 @@
+:root {
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+
+  --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --clr-very-light-gray: hsl(0, 0%, 95%);
+
+  --fw-sm: 400;
+  --fw-medium: 700;
+  --fw-bold: 900;
+
+  --fnt-main: "Lexend Deca", sans-serif;
+  --fnt-second: "Big Shoulders Display", cursive;
+
+  font-size: 0.9375rem;
+  font-family: var(--fnt-main);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.container {
+  border: 1px solid #efefef;
+  border-radius: 1rem;
+  display: flex;
+  gap: 0;
+  max-width: 60%;
+  width: 100%;
+  flex-direction: row;
+  margin: 5rem auto;
+}
+
+.card-item {
+  padding: 6rem 2rem;
+}
+
+.item-1-bg {
+  background-color: var(--clr-bright-orange);
+}
+.item-2-bg {
+  background-color: var(--clr-dark-cyan);
+}
+.item-3-bg {
+  background-color: var(--clr-very-dark-cyan);
+}
+
+.card-title {
+  font-weight: var(--fw-bold);
+  font-size: 2.25rem;
+  font-family: var(--fnt-second);
+  color: var(--clr-very-light-gray);
+}
+
+.card-description {
+  font-weight: var(--fw-sm);
+  font-size: 1rem;
+  color: var(--clr-very-light-gray);
+  line-height: 1.5;
+  margin-bottom: 4rem;
+  padding-right: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: var(--clr-very-light-gray);
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+}
+
+.learn-more-1 {
+  color: var(--clr-bright-orange);
+}
+.learn-more-2 {
+  color: var(--clr-dark-cyan);
+}
+.learn-more-3 {
+  color: var(--clr-very-dark-cyan);
+}
