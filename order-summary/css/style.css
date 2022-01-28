@@ -1,0 +1,146 @@
+/*
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+ */
+
+:root {
+  --clr-pale-blue: hsl(225, 100%, 94%);
+  --clr-bright-blue: hsl(245, 75%, 52%);
+  --clr-very-pale-blue: hsl(225, 100%, 98%);
+  --clr-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-dark-blue: hsl(223, 47%, 23%);
+  --clr-white: #fff;
+
+  --fw-sm: 500;
+  --fw-medium: 700;
+  --fw-bold: 900;
+
+  --fnt-main: "Outfit", sans-serif;
+
+  --bg-image: url("../images/pattern-background-desktop.svg");
+
+  font-size: 62.5%;
+  font-family: var(--fnt-main);
+}
+
+body {
+  background-image: var(--bg-image);
+  background-color: var(--clr-pale-blue);
+  background-repeat: repeat-x;
+}
+
+.order-summary {
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-pale-blue);
+  border-radius: 1.15rem;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 6rem auto;
+}
+
+.card_image {
+  border-radius: 1.15rem 1.15rem 0 0;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.order-summary_heading {
+  font-weight: var(--fw-medium);
+  font-size: 2.2rem;
+  line-height: 0.1rem;
+  padding: 0.5rem;
+}
+
+.order-summary_description {
+  font-weight: var(--fw-medium);
+  color: var(--clr-desaturated-blue);
+  font-size: 1.4rem;
+  max-width: 30ch;
+  padding: 0.5rem 3.5rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.order-stats {
+  display: inherit;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 64%;
+  gap: 1.5rem;
+  background-color: var(--clr-very-pale-blue);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+}
+.plan-price {
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.music-icon {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  width: 100%;
+  align-self: center;
+}
+
+.annual-plan {
+  font-weight: var(--fw-medium);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.per-year {
+  font-weight: var(--fw-sm);
+  font-size: 1.1rem;
+  color: var(--clr-desaturated-blue);
+  opacity: 0.8;
+  margin: 0;
+}
+
+.change {
+  font-weight: var(--fw-medium);
+  font-size: 1.1rem;
+  color: var(--clr-bright-blue);
+  text-decoration: underline;
+  cursor: pointer;
+  align-self: center;
+  text-align: right !important;
+  margin-left: auto;
+}
+
+/* style for stats */
+.button {
+  background-color: var(--clr-bright-blue);
+  padding: 0.75rem 2rem;
+  width: 65%;
+  text-align: center;
+  border-radius: 0.5rem;
+  color: var(--clr-very-pale-blue);
+  font-weight: var(--fw-medium);
+  font-size: 1.3rem;
+  text-decoration: none;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+}
+
+.cancel-order {
+  text-align: center;
+  padding: 1rem 0;
+  width: 65%;
+  border-radius: 0.5rem;
+  color: var(--clr-desaturated-blue);
+  font-weight: var(--fw-medium);
+  font-size: 1.3rem;
+  text-decoration: none;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}
