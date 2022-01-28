@@ -1,0 +1,114 @@
+/******************************\
+*
+* FRONTENT MENTOR CHALLENGE
+* Code by: Ali Mousavi Nijad
+* v1.0
+*
+\******************************/
+
+:root {
+  --clr-dark-blue: hsl(233, 47%, 7%);
+  --clr-dark-desaturated-blue: hsl(244, 38%, 16%);
+  --clr-soft-violet: hsl(277, 64%, 61%);
+  --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --fw-light: 400;
+  --fw-medium: 700;
+
+  --fnt-main: "Inter", sans-serif;
+  --fnt-second: "Lexend Deca", sans-serif;
+
+  font-size: 93.75%;
+
+  font-family: var(--fnt-main);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-dark-blue);
+}
+
+/***************** Main Wrapper *****************/
+.wrapper {
+  display: flex;
+  max-width: 60vw;
+  margin: 10.5rem auto;
+  border-radius: 1rem;
+}
+
+/***************** Right SIDE *****************/
+.right-side {
+  display: inherit;
+  flex-direction: column;
+  padding: 2.2rem 5rem;
+  background-color: var(--clr-dark-desaturated-blue);
+}
+
+.card-title {
+  color: var(--clr-white);
+  margin: 0.8rem 0;
+  font-size: 1.65rem;
+}
+
+.insight {
+  color: var(--clr-soft-violet);
+}
+
+.card-description {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  color: var(--clr-transparent-white);
+  /* margin: 0.8rem 0; */
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 1rem 0;
+}
+
+.numbers {
+  color: var(--clr-transparent-white);
+  font-weight: var(--fw-medium);
+  font-size: 1.1rem;
+}
+
+.text-for-numbers {
+  color: var(--clr-transparent-white);
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+/***************** Left SIDE *****************/
+.left-side {
+  background: url("../images/image-header-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  order: 1;
+  width: 100%;
+}
+
+.overlay {
+  width: inherit;
+  height: inherit;
+  background-color: var(--clr-soft-violet);
+  opacity: 0.5;
+}
+
+.card-img {
+  max-width: 25vw;
+  display: inherit;
+  flex-basis: 100%;
+}
