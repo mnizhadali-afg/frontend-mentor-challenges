@@ -1,0 +1,135 @@
+/*
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+*/
+
+:root {
+  --clr-soft-blue: hsl(215, 51%, 70%);
+  --clr-cyan: hsl(178, 100%, 50%);
+  --clr-very-dark-blue: hsl(217, 54%, 11%);
+  --clr-darker-blue: hsl(215, 51%, 16%);
+  --clr-dark-blue: hsl(215, 32%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --fw-light: 300;
+  --fw-medium: 400;
+  --fw-semibold: 600;
+
+  --fnt-main: "Outfit", sans-serif;
+
+  font-size: 62.5%;
+  font-family: var(--fnt-main);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--clr-very-dark-blue);
+  color: hsl(0, 0%, 100%);
+  line-height: 1.62;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.nft-card {
+  background-color: var(--clr-darker-blue);
+  border-radius: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  margin: 3.75rem auto;
+}
+
+.nft-card_image {
+  max-width: 25rem;
+  width: 100%;
+  border-radius: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.nft-card_title {
+  font-weight: var(--fw-semibold);
+  font-size: 2rem;
+  margin: 0;
+  text-align: left !important;
+}
+
+.nft-card_info {
+  font-weight: var(--fw-light);
+  color: var(--clr-soft-blue);
+  font-size: 1.6rem;
+  max-width: 24ch;
+  line-height: 1.5;
+}
+
+.nft-card_stats {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--clr-dark-blue);
+}
+
+.nft-card_stats > :first-child {
+  --marker: url("../images/icon-ethereum.svg");
+  --marker-width: 0.75rem;
+  color: var(--clr-cyan);
+}
+
+.nft-card_stats > :last-child {
+  --marker: url("../images/icon-clock.svg");
+  --marker-width: 1em;
+  color: var(--clr-soft-blue);
+}
+
+.marker-left {
+  font-size: 1.6rem;
+  font-weight: var(--fw-medium);
+}
+
+.marker-left::before {
+  content: var(--marker);
+  width: var(--marker-width);
+  position: relative;
+  top: 0.128em;
+  margin-right: 0.5em;
+}
+
+.nft-card_creator {
+  display: flex;
+  gap: 1.65rem;
+  margin: 1rem 0;
+}
+
+.nft-card_creator > img {
+  max-width: 3.2rem;
+  border-radius: 50%;
+  border: 1px solid var(--clr-white);
+}
+
+.creator-name {
+  font-weight: var(--fw-medium);
+  font-size: 1.2rem;
+  color: var(--clr-soft-blue);
+  margin: 0;
+  align-self: center;
+}
+
+.jules-wyve {
+  color: var(--clr-white);
+}
