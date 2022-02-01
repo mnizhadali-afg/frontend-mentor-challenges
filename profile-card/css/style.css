@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --clr-primary-900: hsl(229, 23%, 23%);
+  --clr-primary-700: hsl(185, 75%, 39%);
+  --clr-primary-500: hsl(227, 10%, 46%);
+  --clr-neutral-200: hsl(0, 0%, 59%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  font-family: 'Kumbh Sans', sans-serif;
+
+  --fs-primary: 1rem;
+  --fw-medium: 700;
+  --fw-light: 400;
+}
+
+body {
+  background-color: var(--clr-primary-700);
+  background-image:
+    url('../images/bg-pattern-top.svg'),
+    url('../images/bg-pattern-top.svg');
+  background-repeat: no-repeat;
+  background-size: 35rem;
+  background-blend-mode: overlay;
+  background-position: top left,
+    bottom right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-size: var(--fs-primary);
+  font-weight: var(--fw-medium);
+  margin: 0;
+}
+
+
+p {
+  font-size: .8rem;
+  font-weight: var(--fw-light);
+  letter-spacing: 1px;
+  color: var(--clr-neutral-200);
+  align-self: center;
+  margin: 0;
+
+}
+
+@media (max-width: 576px) {
+  body {
+    background-size: 12rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-size: 20rem;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.card {
+  background-image: url(../images/bg-pattern-card.svg);
+  background-repeat: repeat-x;
+  background-color: var(--clr-neutral-100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 0;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.1);
+  height: 60vh;
+  width: 25%;
+}
+
+
+.card-img {
+  border: .375rem solid var(--clr-neutral-100);
+  border-radius: 50%;
+  width: 6rem;
+  margin-top: 5rem;
+}
+
+.user-info {
+  display: flex;
+  gap: .6rem;
+}
+
+.user-name,
+.user-age {
+  font-size: 1rem;
+}
+
+.user-city {
+  margin: 0;
+  font-weight: var(--fw-light);
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  border-top: 1px solid rgba(212, 212, 212, 0.808);
+  width: 100%;
+  padding: 2rem 0px;
+}
+
+.numbers {
+  margin: .3125rem 0;
+}
+
+.text {
+  letter-spacing: .125rem;
+}
+
+.attribution {
+  /* font-size: .5rem; */
+  display: none;
+}
