@@ -14,120 +14,155 @@
   --fw-light: 400;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
 body {
+  min-height: 100vh;
+  min-width: 100vw;
   background-color: var(--clr-primary-700);
   background-image:
     url('../images/bg-pattern-top.svg'),
     url('../images/bg-pattern-top.svg');
   background-repeat: no-repeat;
   background-size: 35rem;
-  background-blend-mode: overlay;
-  background-position: top left,
-    bottom right;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  text-align: center;
 }
 
-h1,
-h2 {
-  font-size: var(--fs-primary);
-  font-weight: var(--fw-medium);
-  margin: 0;
-}
-
-
-p {
-  font-size: .8rem;
-  font-weight: var(--fw-light);
-  letter-spacing: 1px;
-  color: var(--clr-neutral-200);
-  align-self: center;
-  margin: 0;
-
-}
-
-@media (max-width: 576px) {
-  body {
-    background-size: 12rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  body {
-    background-size: 20rem;
-  }
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-}
-
-.card {
-  background-image: url(../images/bg-pattern-card.svg);
-  background-repeat: repeat-x;
+main {
+  width: 350px;
+  min-height: 375px;
   background-color: var(--clr-neutral-100);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem 0;
-  border-radius: .5rem;
-  box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.1);
-  height: 60vh;
-  width: 25%;
+  box-shadow: 0px 40px 100px hsla(229, 23%, 23%, 0.3);
+  background-image: url(../images/bg-pattern-card.svg);
+  background-position: contain;
+  background-repeat: no-repeat;
 }
-
 
 .card-img {
+  align-self: center;
+  background-image: url(../images/image-victor.jpg);
+  background-size: cover;
+  width: 6.5625rem;
+  height: 6.5625rem;
   border: .375rem solid var(--clr-neutral-100);
   border-radius: 50%;
-  width: 6rem;
-  margin-top: 5rem;
+  margin-top: 5.47rem;
+}
+
+main section {
+  padding-top: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .user-info {
   display: flex;
-  gap: .6rem;
 }
 
-.user-name,
+.user-name {
+  font-size: 1.125rem;
+  padding-right: .5625rem;
+  color: var(--clr-primary-900);
+}
+
 .user-age {
-  font-size: 1rem;
+  font-size: 1.125rem;
+  color: var(--clr-neutral-200);
 }
 
 .user-city {
-  margin: 0;
-  font-weight: var(--fw-light);
-  font-size: 1rem;
-  letter-spacing: 0;
+  font-size: .875rem;
+  padding: 1rem 0;
+  color: var(--clr-neutral-200);
+  align-self: center;
 }
 
 .card-body {
+  border-top: 1px solid rgba(212, 212, 212, 0.808);
+  padding: 24.5px 48px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
-  border-top: 1px solid rgba(212, 212, 212, 0.808);
+  gap: 2rem;
   width: 100%;
-  padding: 2rem 0px;
+}
+
+.user-social-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .numbers {
-  margin: .3125rem 0;
+  font-size: 1.125rem;
+  text-transform: uppercase;
 }
 
 .text {
-  letter-spacing: .125rem;
+  padding-top: .3125rem;
+  font-size: .625rem;
+  letter-spacing: 1.5px;
 }
 
-.attribution {
-  /* font-size: .5rem; */
-  display: none;
+footer {
+  display: block;
+  justify-self: center;
+  align-self: flex-end;
+  position: absolute;
+  font-size: 10px;
+  text-align: center;
+  color: var(--gray-blue);
+  margin-bottom: 3px;
+}
+
+footer a {
+  color: var(--clr-primary-900);
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--gray-blue);
+}
+
+@media (max-width:376px) {
+  body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--clr-primary-700);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 35vw bottom 50vh, left 40vw top 45vh;
+  }
+
+  main {
+    width: 326px;
+  }
+
+  .card {
+    padding: 24.5px 42px;
+  }
+
+  .card-body:nth-of-type(2) {
+    padding-left: 42px;
+  }
+
+  .card-body:last-of-type {
+    padding-left: 47px;
+  }
+
+  footer {
+    display: none;
+  }
 }
