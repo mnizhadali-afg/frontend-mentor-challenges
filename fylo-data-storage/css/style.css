@@ -89,7 +89,7 @@ abbr {
 /*                Left section Style                */
 /* ------------------------------------------------ */
 .icons {
-  width: 260px;
+  width: 280px;
   border-top-right-radius: 100px;
   display: flex;
   flex-direction: column;
@@ -135,8 +135,8 @@ abbr {
 /*                Right section Style               */
 /* ------------------------------------------------ */
 .stats {
-  width: 450px;
-  height: 120px;
+  width: 480px;
+  height: 140px;
   margin-top: 50px;
   position: relative;
   display: flex;
