@@ -1,0 +1,250 @@
+/* ------------------------------------------------ */
+/*                FRONTEND MENTOR Challenge         */
+/*                Credit: Ali Mousavi Nizhad        */
+/* ------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/* @import url('./_slider.css'); */
+
+/* -------------- Root Style -------------- */
+:root {
+  --clr-gradient-dark: hsl(335, 100%, 65%);
+  --clr-gradient-light: hsl(6, 100%, 80%);
+  --clr-neutral-100: hsl(243, 100%, 93%);
+  --clr-neutral-200: hsl(229, 7%, 55%);
+  --clr-neutral-400: hsl(228, 56%, 26%);
+  --clr-neutral-700: hsl(229, 57%, 11%);
+
+  font-size: .875rem;
+  font-family: 'Raleway';
+
+  --fw-light: 400;
+  --fw-sb: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* ------------------------------------------------ */
+/*                Public Elements Style             */
+/* ------------------------------------------------ */
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--clr-neutral-700);
+  background-image: url('../images/bg-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 5vw top 50vh;
+  font-weight: var(--fw-sb);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+p,
+span {
+  font-family: 'Raleway';
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+}
+
+section {
+  background-color: var(--clr-neutral-400);
+  border-radius: 10px;
+}
+
+abbr {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------ */
+/*                Left section Style                */
+/* ------------------------------------------------ */
+.icons {
+  width: 260px;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2.52rem;
+}
+
+.logo img {
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+.small-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.small-icons a {
+  background-color: var(--clr-neutral-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 10px;
+  transition: background-color .2s;
+}
+
+.small-icons a:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+
+.small-icons img {
+  padding: 9px 10px;
+}
+
+
+
+/* ------------------------------------------------ */
+/*                Right section Style               */
+/* ------------------------------------------------ */
+.stats {
+  width: 450px;
+  height: 120px;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2.52rem;
+}
+
+.stats h2 {
+  font-size: .85rem;
+  font-weight: var(--fw-light);
+  color: var(--clr-neutral-100);
+}
+
+.stats h2 span {
+  font-size: 1.1rem;
+  font-weight: var(--fw-sb);
+  color: white;
+}
+
+/* ------------------------------------------------ */
+/*                Slider Style                      */
+/* ------------------------------------------------ */
+.range-slider {
+  display: flex;
+  background-color: var(--clr-neutral-700);
+  height: 12px;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.slider-bar {
+  width: 75%;
+  background: linear-gradient(.25turn, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  margin: 2.5px;
+  border-radius: 15px;
+}
+
+.slider-thumb {
+  width: 7px;
+  height: 7px;
+  background: white;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: 1px;
+}
+
+
+
+/* ************* CALLOUT Start ************* */
+section .left {
+  position: absolute;
+  right: 37px;
+  top: -35px;
+  background-color: white;
+  color: var(--clr-neutral-200);
+  padding: .8rem 1rem;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: var(--fw-light);
+  text-transform: uppercase;
+}
+
+.triangle {
+  width: 20px;
+  height: 20px;
+  border-top: 30px solid rgb(255, 255, 255);
+  border-left: 30px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  right: 37px;
+  top: 15px;
+}
+
+/* ************* CALLOUT End ************* */
+
+.left span {
+  font-family: 'Raleway';
+  font-size: 2.5rem;
+  font-weight: var(--fw-sb);
+  padding-right: 5px;
+  color: var(--clr-neutral-700);
+}
+
+.left #__left {
+  font-size: 12px;
+  font-weight: var(--fw-sb);
+  color: var(--clr-neutral-200);
+}
+
+.stats-min-max {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+
+.stats-min-max p {
+  font-size: 12px;
+  font-weight: var(--fw-sb);
+}
+
+.stats-min-max .max {
+  margin-left: auto;
+}
+
+/* ------------------------------------------------ */
+/*                    footer Style                  */
+/* ------------------------------------------------ */
+footer {
+  display: none;
+}
