@@ -87,7 +87,8 @@ main {
   flex-direction: column;
   align-items: center;
   box-shadow: 5px 8px 45px lightgrey;
-  width: 28%;
+  max-width: 28%;
+  max-height: 100%;
   outline: 10px solid var(--clr-white);
   border-radius: 20px;
   background-color: var(--clr-light-grayish-violet);
@@ -194,8 +195,8 @@ header {
   display: flex;
   overflow: hidden;
   justify-content: end;
-  gap: .325rem;
-  margin-top: .5rem;
+  gap: 0.325rem;
+  margin-top: 0.5rem;
 }
 
 .imgs img {
