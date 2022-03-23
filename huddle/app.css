@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  /* ----------- colors  ----------- */
+  --clr-grayish-blue: hsl(208, 11%, 55%);
+  --clr-very-dark-cyan: hsl(192, 100%, 9%);
+  --clr-very-pale-cyan: hsl(193, 100%, 96%);
+  --clr-secondary-pink: hsl(322, 100%, 66%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+
+  /* ----------- shadows  ----------- */
+  --btn-shadow-clr: #8bd2db;
+  --text-shadow-clr: #d6d4d4;
+
+  /* ----------- font size  ----------- */
+  --fs-main: 1.8rem;
+  --fs-h1: 2.2rem;
+  --fs-h2: 2rem;
+  --fs-btn: 1.6rem;
+
+  /* ----------- font weight  ----------- */
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-400: 400;
+
+  /* ----------- font family  ----------- */
+  font-family: "Open Sans", sans-serif;
+}
+
+/* /////////////////// general ELEMENTS /////////////////// */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--fs-main);
+  font-weight: var(--fw-400);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-600);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-600);
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+/* /////////////////// general CLASSES /////////////////// */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.btn {
+  border-radius: 70px;
+  font-weight: var(--fw-700);
+  border: none;
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
+  padding: 1.35rem 5rem;
+}
+.btn:hover,
+.btn:focus {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: var(--clr-neutral-white);
+  box-shadow: 1px 1px 5px var(--btn-shadow-clr);
+}
+.btn-pink {
+  background-color: var(--clr-secondary-pink);
+  color: var(--clr-neutral-white);
+  box-shadow: 1px 1px 5px var(--clr-secondary-pink);
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+.col-lg {
+  max-width: 60rem;
+}
+
+.col-md {
+  max-width: 50rem;
+  gap: 4rem;
+}
+
+.col-sm {
+  max-width: 40rem;
+}
+
+.col-xsm {
+  max-width: 30rem;
+}
+
+/* /////////////////// hero section /////////////////// */
+.logo {
+  cursor: pointer;
+}
+.hero {
+  background: url("./images/bg-hero-desktop.svg");
+  background-color: azure;
+  padding: 3rem 0;
+}
+.header {
+  display: flex;
+}
+.hero-container {
+  gap: 8rem;
+  margin: 3.5rem 0;
+}
+.hero-text-title {
+  font-size: 4rem;
+  font-weight: var(--fw-700);
+  text-transform: capitalize;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+.hero-text-description {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.hero-image-lg {
+  width: 100%;
+}
+
+/* /////////////////// services section /////////////////// */
+.services {
+  padding: 20rem 0;
+}
+.service {
+  height: 40rem;
+  gap: 5rem;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+  padding: 4rem;
+  box-shadow: 1px 1px 5px hsla(0, 0%, 53%, 0.212);
+}
+.service-title {
+  margin-bottom: 1.5rem;
+}
+.service-image {
+  margin: 4rem 0;
+}
+.service--image {
+  width: 70%;
+}
+
+/* /////////////////// overlay-card section /////////////////// */
+.overlay {
+  position: relative;
+}
+.overlay-card {
+  background-color: var(--clr-neutral-white);
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 6rem 3rem;
+  border-radius: 5px;
+  box-shadow: -1px -1px 5px hsla(0, 0%, 53%, 0.212);
+}
+.overlay-text-title {
+  margin-bottom: 2rem;
+}
+/* /////////////////// footer /////////////////// */
+footer {
+  background-color: var(--clr-very-dark-cyan);
+  color: var(--clr-neutral-white);
+  padding: 12rem;
+  padding-bottom: 8rem;
+}
+.logo-transparent {
+  margin-bottom: 2rem;
+}
+footer li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+footer li a {
+  text-decoration: none;
+  color: var(--clr-neutral-white);
+}
+.middle-wrap {
+  display: flex;
+  gap: 6rem;
+}
+.footer-img {
+  display: inline;
+}
+.copyright {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 4rem;
+}
+
+.footer-social {
+  gap: 2rem;
+}
+.fa-brands {
+  font-style: normal;
+  border: 1px solid var(--clr-neutral-white);
+  padding: 1rem;
+  border-radius: 50%;
+}
+strong {
+  text-decoration: underline;
+}
