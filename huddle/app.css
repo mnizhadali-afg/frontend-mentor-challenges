@@ -49,11 +49,6 @@ h1 {
   font-weight: var(--fw-600);
 }
 
-h2 {
-  font-size: var(--fs-h2);
-  font-weight: var(--fw-600);
-}
-
 h1,
 h2 {
   font-family: "Poppins", sans-serif;
