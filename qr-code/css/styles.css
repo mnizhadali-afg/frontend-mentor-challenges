@@ -87,6 +87,7 @@ select {
   --fw-400: 400;
   --fw-700: 900;
 
+  --space-12px: 1.2rem;
   --space-15px: 1.5rem;
   --space-18px: 1.8rem;
   --space-20px: 2rem;
@@ -132,4 +133,9 @@ p {
 .card__img {
   width: 20vw;
   border-radius: var(--space-15px);
+}
+
+.attribution {
+  width: 100%;
+  font-size: var(--space-12px);
 }
