@@ -18,12 +18,12 @@
 */
 
 :root {
-  --clr-soft-blue: hsl(215, 51%, 70%);
-  --clr-cyan: hsl(178, 100%, 50%);
-  --clr-very-dark-blue: hsl(217, 54%, 11%);
-  --clr-darker-blue: hsl(215, 51%, 16%);
-  --clr-dark-blue: hsl(215, 32%, 27%);
-  --clr-white: hsl(0, 0%, 100%);
+  --clr-soft-blue: #8bacda;
+  --clr-cyan: #00fff7;
+  --clr-very-dark-blue: #0d192b;
+  --clr-darker-blue: #14253e;
+  --clr-dark-blue: #2f415b;
+  --clr-white: #ffffff;
 
   --fw-light: 300;
   --fw-medium: 400;
